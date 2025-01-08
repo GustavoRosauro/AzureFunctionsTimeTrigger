@@ -11,7 +11,7 @@ namespace AzureFunctionsTimeTrigger
         public Function1(ILoggerFactory loggerFactory)
         {
             _logger = loggerFactory.CreateLogger<Function1>();
-        }
+        } 
 
         [Function("Function1")]
         public void Run([TimerTrigger("0 * * * * *")] TimerInfo myTimer)
